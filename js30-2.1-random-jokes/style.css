@@ -48,7 +48,7 @@ body, html {
     display: flex; /*ПРИЖИМАЕМ ФУТЕР КНИЗУ*/
     flex-direction: column; /*ПРИЖИМАЕМ ФУТЕР КНИЗУ*/
     max-width: 1440px;
-    background: linear-gradient(#c40957, #00fc4c);
+    background: linear-gradient(#fff, #000);
     overflow: hidden;
     margin: 0 auto;
 }
@@ -57,7 +57,6 @@ body, html {
 
 .header {
     height: 70px;
-    border-bottom: 3px solid #069c33;
 }
 
 .header-buttons {
@@ -67,16 +66,22 @@ body, html {
     column-gap: 15px;
 }
 
-.slash, .ru, .en {
+.ru, .en {
     margin: auto 0;
     font-weight: 'Mediun-Bold';
     font-weight: 600;
     font-size: 25px;
     background-color: transparent;
+    color: #000;
+
+}
+
+.ru, .en {
+    cursor: pointer;
 }
 
 .ru.active, .en.active {
-    color: #069c33;
+    color: rgb(6, 119, 76);
 }
 
 
@@ -87,7 +92,7 @@ body, html {
 }
 
 .content {
-    padding-top: 50px;
+    padding-top: 55px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,16 +109,18 @@ body, html {
 
 .button {
     margin-top: 50px;
-    width: 200px;
-    height: 50px;
+    width: 500px;
+    height: 55px;
     font-family: 'Medium-Bold';
     font-size: 35px;
     line-height: 25px;
-    border: 3px solid #c40957;
+    border: 3px solid #000;
     background-color: transparent;
     cursor: pointer;
-    color: #c40957;
-    transition: 0.5s;
+    /* color: #960707; */
+    color: rgba(14, 13, 13, 0.904);
+    transition: 0.3s;
+    border-radius: 50px;
     position: relative;
     z-index: 1;
 }
@@ -125,14 +132,15 @@ body, html {
     left: 0;
 	width: 0;
 	height: 100%;
-	background-color: #c40957;
+	background-color: #868484;
 	transition: all 0.8s ease;
     z-index: 0;
     opacity: 0.3;
+    border-radius: 50px;
 }
 
 .button:hover {
-    color: #00fc4c;
+    color: #000;
 }
 
 .button:hover:before {
@@ -140,30 +148,24 @@ body, html {
 }
 
 .button:active {
-    background-color: #c40957;
+    background-color: #fff;
     opacity: 0.5;
 
 }
 
 .text {
-    margin: 40px 20px 10px;
+    margin: 20px 10px 10px;
     font-family: 'Medium-Regular';
     font-size: 40px;
     text-align: center;
+    color: #fff;
 }
-
-.author {
-    font-family: 'Medium-Regular';
-    font-size: 20px;
-    text-align: center;
-}
-
 
 /* ______FOOTER____________ */
 
 .footer {
     height: 100px;
-    border-top: 3px #370d50c4 solid;
+    /* border-top: 3px #370d50c4 solid; */
 }
 
 .list-items {
@@ -176,10 +178,10 @@ body, html {
 
 .one-item, .footer-link {
     font-size: 25px;
-    color: #960743;
+    color: rgb(6, 119, 76);
     font-weight: 600;
     transition: 0.8s;
 }
 .footer-link:hover {
-    text-shadow: 3px -3px 10px #960743;
+    text-shadow: 3px -3px 10px rgb(6, 119, 76);
 }

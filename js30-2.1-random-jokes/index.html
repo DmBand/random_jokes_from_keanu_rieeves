@@ -12,16 +12,14 @@
         <header class="header">
             <div class="header-buttons">
                 <button class="ru">ru</button>
-                <div class="slash">/</div>
-                <button class="en">en</button>
+                <button class="en active">en</button>
             </div>
         </header>
         <main class="main">
             <div class="content">
                 <img class="keanu" src="./assets/img/keanu1.png" alt="keanu">
-                <button class="button">Get cite</button>
-                <p class="text"></p>
-                <p class="author"></p>
+                <button class="button" data-i18n="button">Get a quote from Keanu</button>
+                <p class="text" data-i18n="cite1"></p>
             </div>
         </main>
         <footer class="footer">
@@ -38,6 +36,6 @@
                 </ul>
         </footer>
     </div>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
