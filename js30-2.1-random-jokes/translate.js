@@ -1,6 +1,7 @@
 const i18Obj = {
     'en': {
         'button': 'Get a quote from Keanu',
+		'sub': "Y're amazing!",
 		"cite1": "I hate it when people lie to me. And I can't stand it, especially for no reason.",
 		"cite2": "It is always pleasant to communicate with women. They are joyful and mysterious. If a man managed to make her laugh, then he will see the most beautiful creature that exists in the world.",
 		"cite3": "The pleasure of work does not depend on the genre, it depends on who you work with, what kind of relationship you have with the actors, with the director, with the material.",
@@ -23,6 +24,7 @@ const i18Obj = {
     },
         'ru': {
         'button': 'Получить цитату от Киану',
+		'sub': "Ты потрясяющий!",
         "cite1": "Ненавижу, когда люди мне лгут. И терпеть не могу насилие, особенно без причины.",
 		"cite2": "С женщинами всегда приятно общаться. Они радостны и таинственны. Если мужчине удалось заставить ее смеяться, то он увидит самое прекрасное существо, что есть в мире.",
 		"cite3": "Удовольствие от работы не зависит от жанра, это зависит от того, с кем ты работаешь, какие отношения складываются с актерами, с режиссером, с материалом.",

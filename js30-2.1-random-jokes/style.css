@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body, html {
     height: 100%; /*ПРИЖИМАЕМ ФУТЕР КНИЗУ*/
+    background: linear-gradient(#000, #fff);
 }
 
 .container {
@@ -48,7 +49,7 @@ body, html {
     display: flex; /*ПРИЖИМАЕМ ФУТЕР КНИЗУ*/
     flex-direction: column; /*ПРИЖИМАЕМ ФУТЕР КНИЗУ*/
     max-width: 1440px;
-    background: linear-gradient(#fff, #000);
+    background: linear-gradient(#000, #fff);
     overflow: hidden;
     margin: 0 auto;
 }
@@ -72,7 +73,7 @@ body, html {
     font-weight: 600;
     font-size: 25px;
     background-color: transparent;
-    color: #000;
+    color: #fff;
 
 }
 
@@ -81,7 +82,13 @@ body, html {
 }
 
 .ru.active, .en.active {
-    color: rgb(6, 119, 76);
+    color: rgb(100, 1, 1);
+}
+
+@media (max-width: 1024px) {
+    .ru, .en {
+        font-size: 20px;
+    }
 }
 
 
@@ -91,8 +98,18 @@ body, html {
     flex: 1 1 auto; /*ПРИЖИМАЕМ ФУТЕР КНИЗУ*/
 }
 
+.sub-text {
+    font-family: 'Medium-Regular';
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
 .content {
-    padding-top: 55px;
+    padding-top: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,6 +124,13 @@ body, html {
     transform: rotate(360deg);
 }
 
+@media (max-width: 1024px) {
+    .keanu {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
 .button {
     margin-top: 50px;
     width: 500px;
@@ -117,7 +141,6 @@ body, html {
     border: 3px solid #000;
     background-color: transparent;
     cursor: pointer;
-    /* color: #960707; */
     color: rgba(14, 13, 13, 0.904);
     transition: 0.3s;
     border-radius: 50px;
@@ -132,7 +155,7 @@ body, html {
     left: 0;
 	width: 0;
 	height: 100%;
-	background-color: #868484;
+	background-color: #3f3d3d;
 	transition: all 0.8s ease;
     z-index: 0;
     opacity: 0.3;
@@ -150,7 +173,13 @@ body, html {
 .button:active {
     background-color: #fff;
     opacity: 0.5;
+}
 
+@media (max-width: 1024px) {
+    .button {
+        width: 280px;
+        font-size: 20px;
+    }
 }
 
 .text {
@@ -158,8 +187,16 @@ body, html {
     font-family: 'Medium-Regular';
     font-size: 40px;
     text-align: center;
-    color: #fff;
+    color: rgb(100, 1, 1);
 }
+
+@media (max-width: 1024px) {
+    .text {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* ______FOOTER____________ */
 
@@ -178,10 +215,32 @@ body, html {
 
 .one-item, .footer-link {
     font-size: 25px;
-    color: rgb(6, 119, 76);
+    color: #000;
     font-weight: 600;
     transition: 0.8s;
 }
 .footer-link:hover {
-    text-shadow: 3px -3px 10px rgb(6, 119, 76);
+    text-shadow: 3px -3px 10px #000;
 }
+
+.icon-link {
+    width: 100px;
+    vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        height: 80px;
+    }
+
+    .list-items {
+        line-height: 40px;
+    }
+
+    .icon-link {
+        width: 80px;
+    }
+    .one-item, .footer-link {
+        font-size: 20px;
+    }
+}   

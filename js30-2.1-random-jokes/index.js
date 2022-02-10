@@ -1,7 +1,7 @@
 'use strict'
 import i18Obj from './translate.js';
 
-const url = 'https://type.fit/api/quotes';
+// const url = 'https://type.fit/api/quotes';
 const content = document.querySelector('.text');
 const button = document.querySelector('.button');
 const image = document.querySelector('.keanu');
@@ -28,8 +28,6 @@ const en = document.querySelector('.en');
 
 // getData()
 
-
-
 async function getQuotes() {  
     let quotes;
     if (en.classList.contains('active')) {
@@ -45,7 +43,7 @@ async function getQuotes() {
 getQuotes();
 
 function showData(data) {
-    let index = Math.floor(Math.random() * (data.length));
+    let index = Math.floor(Math.random() * (data.length-1));
     content.textContent = data[index].text;
 }
 
